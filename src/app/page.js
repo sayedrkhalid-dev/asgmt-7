@@ -1,5 +1,3 @@
-import NavbarCom from "@/components/NavbarCom";
-
-export default function Home() {
-  return <NavbarCom />;
+export default function HomePage() {
+  return <h1>Home page</h1>;
 }
