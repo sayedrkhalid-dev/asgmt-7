@@ -20,7 +20,7 @@ export default function NavbarCom() {
   const pathname = usePathname();
 
   return (
-    <Navbar fluid rounded>
+    <Navbar fluid className="py-5">
       <NavbarBrand as={Link} href="/">
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
           <span className="font-bold">Keen</span>Keep
@@ -50,7 +50,7 @@ export default function NavbarCom() {
 
         <NavbarLink
           as={Link}
-          href="timeline"
+          href="/stats"
           active={pathname === "/stats"}
           className="flex items-center gap-2"
         >
