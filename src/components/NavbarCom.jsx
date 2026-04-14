@@ -8,8 +8,11 @@ import {
   NavbarToggle,
 } from "flowbite-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function NavbarCom() {
+  const pathname = usePathname();
+
   return (
     <Navbar fluid rounded>
       <NavbarBrand as={Link} href="/">
@@ -19,13 +22,13 @@ export default function NavbarCom() {
       </NavbarBrand>
       <NavbarToggle />
       <NavbarCollapse>
-        <NavbarLink as={Link} href="/" active>
+        <NavbarLink as={Link} href="/" active={pathname === "/"}>
           Home
         </NavbarLink>
-        <NavbarLink as={Link} href="about">
+        <NavbarLink as={Link} href="about" active={pathname === "/about"}>
           About
         </NavbarLink>
-        <NavbarLink as={Link} href="timeline">
+        <NavbarLink as={Link} href="timeline" active={pathname === "/timeline"}>
           Timeline
         </NavbarLink>
       </NavbarCollapse>
