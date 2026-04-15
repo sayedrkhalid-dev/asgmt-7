@@ -2,8 +2,6 @@
 
 # dependencies
 /node_modules
-.flowbite-react/
-.vscode/
 /.pnp
 .pnp.*
 .yarn/*
@@ -11,6 +9,8 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+.flowbite-react/*
+.vscode/*
 
 # testing
 /coverage
