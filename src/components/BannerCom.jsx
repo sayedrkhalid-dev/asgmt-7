@@ -9,7 +9,7 @@ export default function BannerCom() {
           <h1 className="mb-1 text-3xl font-bold text-gray-900 dark:text-white">
             Friends to keep close in your life
           </h1>
-          <p className="flex items-center font-normal text-gray-500 dark:text-gray-400 px-16">
+          <p className="flex items-center font-normal text-gray-500 dark:text-gray-300 px-16">
             Your personal shelf of meaningful connections. Browse, tend, and
             nurture the relationships that matter most.
           </p>
