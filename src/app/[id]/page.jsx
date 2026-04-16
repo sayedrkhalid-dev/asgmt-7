@@ -1,4 +1,4 @@
-import friends from "../../../../public/data/friends.json";
+import friends from "../../../public/data/friends.json";
 import FriendDetailLeft from "@/components/FriendDetail/FriendDetailLeft/FriendDetailLeft";
 import FriendDetailRight from "@/components/FriendDetail/FriendDetailRight/FriendDetailRight";
 
