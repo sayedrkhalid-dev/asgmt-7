@@ -102,31 +102,5 @@
     "bio": "Met in photography class. Planning a trip to Japan.",
     "goal": 14,
     "next_due_date": "2025-07-30"
-  },
-  {
-    "id": 9,
-    "name": "Rachel Green",
-    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop",
-    "profession": "Photographer",
-    "email": "rachel.g@example.com",
-    "days_since_contact": 3,
-    "status": "on-track",
-    "tags": ["hobby", "travel"],
-    "bio": "Met in photography class. Planning a trip to Japan.",
-    "goal": 14,
-    "next_due_date": "2025-07-30"
-  },
-  {
-    "id": 10,
-    "name": "Rachel Green",
-    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop",
-    "profession": "Photographer",
-    "email": "rachel.g@example.com",
-    "days_since_contact": 3,
-    "status": "almost due",
-    "tags": ["hobby", "travel"],
-    "bio": "Met in photography class. Planning a trip to Japan.",
-    "goal": 14,
-    "next_due_date": "2025-07-30"
   }
 ]
