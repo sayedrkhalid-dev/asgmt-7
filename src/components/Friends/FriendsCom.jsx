@@ -15,7 +15,7 @@ const FriendsCom = () => {
         <div className="mt-4">
           <ul className="grid grid-cols-[repeat(auto-fit,minmax(270px,1fr))] gap-4">
             {friends_data.map((friend) => (
-              <Link href={`/friends/${friend.id}`} key={friend.id}>
+              <Link href={`/${friend.id}`} key={friend.id}>
                 <FriendCom friend={friend} />
               </Link>
             ))}
