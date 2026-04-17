@@ -1,13 +1,5 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js&logoColor=white" />
-<img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
-<img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-<img src="https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white" />
-<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
-
-<br /><br />
-
 # 🤝 KinKeeper
 
 **Your personal shelf of meaningful connections.**
@@ -50,7 +42,7 @@ Log interactions in one tap:
 ### 🔔 Toast Notifications
 - Real-time feedback on every interaction log via **React Hot Toast**
 
-### 💀 Loading Skeletons
+### 💀 Loading Spinner
 - Smooth loading states using Next.js `loading.jsx` per route segment
 
 ### 📱 Responsive Design
