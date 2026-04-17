@@ -1,4 +1,4 @@
-import { Badge, Card } from "flowbite-react";
+import { Badge, Button, Card } from "flowbite-react";
 import {
   Archive,
   Bell,
@@ -81,24 +81,33 @@ const FriendDetailLeft = ({ friend }) => {
 
       {/* Detail Bottom */}
       <div className="flex flex-col gap-1">
-        <Card className="text-gray-900 dark:text-white cursor-default">
-          <span className="flex items-center gap-2">
+        {/* Archive Button */}
+        <Button
+          color="alternative"
+          className="text-gray-900 dark:text-white cursor-pointer"
+        >
+          <span className="flex items-center gap-2 my-4">
             <Archive size={20} /> Archive
           </span>
-        </Card>
+        </Button>
 
-        <Card className="text-gray-900 dark:text-white cursor-default">
-          <span className="flex items-center gap-2">
+        {/* Snooze Button */}
+        <Button
+          color="alternative"
+          className="text-gray-900 dark:text-white cursor-pointer"
+        >
+          <span className="flex items-center gap-2 my-4">
             <Bell size={20} />
             Snooze
           </span>
-        </Card>
+        </Button>
 
-        <Card className="text-red-500 cursor-default">
-          <span className="flex items-center gap-2">
+        {/* Delete Button */}
+        <Button color="alternative" className="text-red-500 cursor-pointer">
+          <span className="flex items-center gap-2 my-4">
             <TrashBin size={20} /> Delete
           </span>
-        </Card>
+        </Button>
       </div>
     </aside>
   );

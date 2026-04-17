@@ -1,10 +1,7 @@
-import { Badge, Card } from "flowbite-react";
-import {
-  ClockArrow,
-  MessageDots,
-  OutgoingCall,
-  VideoCamera,
-} from "flowbite-react-icons/outline";
+import { Badge, Button, Card } from "flowbite-react";
+import { ClockArrow } from "flowbite-react-icons/outline";
+import QuickCheckIn from "./QuickCheckIn";
+import Interaction from "./Interaction";
 import Link from "next/link";
 
 const FriendDetailRight = ({ friend }) => {
@@ -59,38 +56,32 @@ const FriendDetailRight = ({ friend }) => {
             </p>
           </div>
 
-          <Link href="/edit_friend">
-            <Badge color="gray" size="sm" className="rounded cursor-pointer">
-              Edit
-            </Badge>
+          <Link href="#">
+            <Button
+              outline
+              color="gray"
+              className="bg-gray-300 text-gray-900 dark:text-white cursor-pointer"
+            >
+              <span className="py-2">Edit</span>
+            </Button>
           </Link>
         </div>
       </Card>
 
-      {/* Quick Check */}
+      {/* Quick Check-In Buttons  */}
       <Card>
         <h2 className="text-gray-900 dark:text-gray-50 md:text-xl font-semibold">
           Quick Check In
         </h2>
         <div className="grid md:grid-cols-3 gap-2">
-          <Card className="text-gray-900 dark:text-white">
-            <span className="inline-flex items-center gap-2">
-              <OutgoingCall /> Call
-            </span>
-          </Card>
+          {/* Quick-Check-In Call Button */}
+          <QuickCheckIn friend={friend} label="call" />
 
-          <Card className="text-gray-900 dark:text-white">
-            <span className="inline-flex items-center gap-2">
-              <MessageDots />
-              Text
-            </span>
-          </Card>
+          {/* Quick-Check-In Text Button */}
+          <QuickCheckIn friend={friend} label="text" />
 
-          <Card className="text-gray-900 dark:text-white">
-            <span className="inline-flex items-center gap-2">
-              <VideoCamera /> Video
-            </span>
-          </Card>
+          {/* Quick-Check-In Video Button */}
+          <QuickCheckIn friend={friend} label="video" />
         </div>
       </Card>
 
@@ -110,85 +101,9 @@ const FriendDetailRight = ({ friend }) => {
           </Badge>
         </div>
 
-        {/* Interraction Type */}
-        <div className="flex items-center justify-between gap-2 mb-3">
-          <div className="flex items-center gap-2">
-            <MessageDots size={36} strokeWidth={1.5} />
-            <div>
-              <h3 className="text-gray-900 dark:text-gray-50  font-semibold">
-                Text
-              </h3>
-              <p className="text-gray-500 dark:text-gray-300 text-sm md:text-base">
-                Asked for career advice
-              </p>
-            </div>
-          </div>
-
-          {/* Interaction date */}
-          <span className="text-gray-500 dark:text-gray-300 text-sm md:text-base">
-            Jan 28, 2026
-          </span>
-        </div>
-
-        {/* Interraction Type */}
-        <div className="flex items-center justify-between gap-2 mb-3">
-          <div className="flex items-center gap-2">
-            <OutgoingCall size={36} strokeWidth={1.5} />
-            <div>
-              <h3 className="text-gray-900 dark:text-gray-50  font-semibold">
-                Meet Up
-              </h3>
-              <p className="text-gray-500 dark:text-gray-300 text-sm md:text-base">
-                Industry conference meetup
-              </p>
-            </div>
-          </div>
-
-          {/* Interaction date */}
-          <span className="text-gray-500 dark:text-gray-300 text-sm md:text-base">
-            Jan 28, 2026
-          </span>
-        </div>
-
-        {/* Interraction Type */}
-        <div className="flex items-center justify-between gap-2 mb-3">
-          <div className="flex items-center gap-2">
-            <VideoCamera size={36} strokeWidth={1.5} />
-            <div>
-              <h3 className="text-gray-900 dark:text-gray-50  font-semibold">
-                Video
-              </h3>
-              <p className="text-gray-500 dark:text-gray-300 text-sm md:text-base">
-                Asked for career advice
-              </p>
-            </div>
-          </div>
-
-          {/* Interaction date */}
-          <span className="text-gray-500 dark:text-gray-300 text-sm md:text-base">
-            Jan 28, 2026
-          </span>
-        </div>
-
-        {/* Interraction Type */}
-        <div className="flex items-center justify-between gap-2 mb-3">
-          <div className="flex items-center gap-2">
-            <MessageDots size={36} strokeWidth={1.5} />
-            <div>
-              <h3 className="text-gray-900 dark:text-gray-50  font-semibold">
-                Text
-              </h3>
-              <p className="text-gray-500 dark:text-gray-300 text-sm md:text-base">
-                Asked for career advice
-              </p>
-            </div>
-          </div>
-
-          {/* Interaction date */}
-          <span className="text-gray-500 dark:text-gray-300 text-sm md:text-base">
-            Jan 28, 2026
-          </span>
-        </div>
+        {friend.interactions.map((interaction) => (
+          <Interaction key={interaction.id} interaction={interaction} />
+        ))}
       </Card>
     </div>
   );
