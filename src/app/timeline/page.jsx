@@ -3,6 +3,7 @@ import { Card, Dropdown, DropdownItem } from "flowbite-react";
 import Interaction from "./Interaction/Interaction";
 import { useFriend } from "@/context/FriendContext";
 import { useState } from "react";
+import { Check } from "flowbite-react-icons/outline";
 
 const TimelinePage = () => {
   const { timeline } = useFriend();
@@ -27,26 +28,48 @@ const TimelinePage = () => {
               label={`Search By:  ${searchType.toUpperCase()}`}
               className="py-2"
             >
-              <DropdownItem onClick={() => setSearchType("all")}>
-                All
+              <DropdownItem
+                className="flex items-center gap-2"
+                onClick={() => setSearchType("all")}
+              >
+                {searchType === "all" && <Check size={18} />}
+                <span>All</span>
               </DropdownItem>
-              <DropdownItem onClick={() => setSearchType("text")}>
-                Text
+              <DropdownItem
+                className="flex items-center gap-2"
+                onClick={() => setSearchType("text")}
+              >
+                {searchType === "text" && <Check size={18} />}
+                <span>Text</span>
               </DropdownItem>
-              <DropdownItem onClick={() => setSearchType("video")}>
-                Video
+              <DropdownItem
+                className="flex items-center gap-2"
+                onClick={() => setSearchType("video")}
+              >
+                {searchType === "video" && <Check size={18} />}
+                <span>Video</span>
               </DropdownItem>
-              <DropdownItem onClick={() => setSearchType("call")}>
-                Call
+              <DropdownItem
+                className="flex items-center gap-2"
+                onClick={() => setSearchType("call")}
+              >
+                {searchType === "call" && <Check size={18} />}
+                <span>Call</span>
               </DropdownItem>
             </Dropdown>
           </div>
         </Card>
 
         <Card className="mt-2 text-gray-500 dark:text-gray-300 justify-items-start">
-          {searchedTimeline(searchType).map((interaction) => (
-            <Interaction key={interaction.id} interaction={interaction} />
-          ))}
+          {timeline.length === 0 ? (
+            <p className="text-gray-500 text-center">
+              No interaction data available. Add some friends first!
+            </p>
+          ) : (
+            searchedTimeline(searchType).map((interaction) => (
+              <Interaction key={interaction.id} interaction={interaction} />
+            ))
+          )}
         </Card>
       </div>
     </section>

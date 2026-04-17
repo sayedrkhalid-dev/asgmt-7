@@ -23,10 +23,10 @@ const FooterCom = () => {
         </div>
 
         <div className="my-8 flex flex-col items-center">
-          <h3 className="text-xl text-gray-900 dark:text-gray-50">
+          <h3 className="mb-4 text-xl text-gray-900 dark:text-gray-50">
             Social links
           </h3>
-          <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center gap-4">
+          <div className="flex space-x-4 sm:mt-0 sm:justify-center">
             <Link href="https://www.facebook.com/SayedRKhalid/">
               <BsFacebook size="24" fill="gray" />
             </Link>

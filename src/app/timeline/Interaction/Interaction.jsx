@@ -1,4 +1,4 @@
-import { Badge, Card, Dropdown, DropdownItem } from "flowbite-react";
+import { Card } from "flowbite-react";
 import {
   MessageDots,
   OutgoingCall,

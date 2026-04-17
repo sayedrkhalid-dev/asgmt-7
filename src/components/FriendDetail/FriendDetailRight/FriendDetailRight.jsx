@@ -1,10 +1,16 @@
+"use client";
+
 import { Badge, Button, Card } from "flowbite-react";
 import { ClockArrow } from "flowbite-react-icons/outline";
 import QuickCheckIn from "./QuickCheckIn";
-import Interaction from "./Interaction";
 import Link from "next/link";
 
+import Interactions from "./Interactions";
+import { useFriend } from "@/context/FriendContext";
+
 const FriendDetailRight = ({ friend }) => {
+  const { timeline } = useFriend();
+
   return (
     <div className="w-full md:w-[70%] flex flex-col gap-2">
       <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-2">
@@ -60,7 +66,7 @@ const FriendDetailRight = ({ friend }) => {
             <Button
               outline
               color="gray"
-              className="bg-gray-300 text-gray-900 dark:text-white cursor-pointer"
+              className="bg-gray-300/10 text-gray-900 dark:text-white cursor-pointer"
             >
               <span className="py-2">Edit</span>
             </Button>
@@ -93,7 +99,7 @@ const FriendDetailRight = ({ friend }) => {
             Recent Interactions
           </h2>
 
-          <Link href="/full_history">
+          <Link href="/timeline">
             <Badge color="gray" size="sm" className="rounded cursor-pointer">
               <span className="flex items-center gap-1">
                 <ClockArrow size={18} />
@@ -103,9 +109,13 @@ const FriendDetailRight = ({ friend }) => {
           </Link>
         </div>
 
-        {friend.interactions.map((interaction) => (
-          <Interaction key={interaction.id} interaction={interaction} />
-        ))}
+        {timeline.length === 0 ? (
+          <p className="py-4 text-gray-500 text-center">
+            No recent interaction data available. Add some friends first!
+          </p>
+        ) : (
+          <Interactions timeline={timeline} />
+        )}
       </Card>
     </div>
   );

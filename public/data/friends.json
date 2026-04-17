@@ -11,48 +11,7 @@
     "bio": "Met in university. Love hiking together.",
     "goal": 14,
     "next_due_date": "2025-07-20",
-    "interactions": [
-      {
-        "id": 1,
-        "label": "text",
-        "description": "Sent a funny meme about coding bugs.",
-        "type": "text",
-        "with": "john doe",
-        "date": "March 01 2026"
-      },
-      {
-        "id": 2,
-        "label": "call",
-        "description": "Discussed weekend hiking trip plans.",
-        "type": "call",
-        "with": "john doe",
-        "date": "February 20 2026"
-      },
-      {
-        "id": 3,
-        "label": "video",
-        "description": "Caught up for 30 mins about work and life.",
-        "type": "video",
-        "with": "john doe",
-        "date": "February 10 2026"
-      },
-      {
-        "id": 4,
-        "label": "text",
-        "description": "Shared photos from the hiking trip.",
-        "type": "text",
-        "with": "john doe",
-        "date": "January 28 2026"
-      },
-      {
-        "id": 5,
-        "label": "call",
-        "description": "Quick chat about his new job offer.",
-        "type": "call",
-        "with": "john doe",
-        "date": "January 15 2026"
-      }
-    ]
+    "interactions": []
   },
   {
     "id": 2,
@@ -66,48 +25,7 @@
     "bio": "Former colleague. She taught me everything about design.",
     "goal": 10,
     "next_due_date": "2025-07-28",
-    "interactions": [
-      {
-        "id": 1,
-        "label": "text",
-        "description": "Asked for feedback on my portfolio.",
-        "type": "text",
-        "with": "john doe",
-        "date": "March 05 2026"
-      },
-      {
-        "id": 2,
-        "label": "call",
-        "description": "Discussed a potential collaboration.",
-        "type": "call",
-        "with": "john doe",
-        "date": "February 25 2026"
-      },
-      {
-        "id": 3,
-        "label": "video",
-        "description": "Walked through a new design tool together.",
-        "type": "video",
-        "with": "john doe",
-        "date": "February 14 2026"
-      },
-      {
-        "id": 4,
-        "label": "text",
-        "description": "Sent her an article about UX trends.",
-        "type": "text",
-        "with": "john doe",
-        "date": "February 01 2026"
-      },
-      {
-        "id": 5,
-        "label": "call",
-        "description": "Thanked her for the mentorship advice.",
-        "type": "call",
-        "with": "john doe",
-        "date": "January 20 2026"
-      }
-    ]
+    "interactions": []
   },
   {
     "id": 3,
@@ -121,48 +39,7 @@
     "bio": "Workout buddy. Helps me stay motivated.",
     "goal": 7,
     "next_due_date": "2025-07-15",
-    "interactions": [
-      {
-        "id": 1,
-        "label": "text",
-        "description": "Checked in about my weekly workout progress.",
-        "type": "text",
-        "with": "john doe",
-        "date": "March 07 2026"
-      },
-      {
-        "id": 2,
-        "label": "call",
-        "description": "Planned a session for next Monday.",
-        "type": "call",
-        "with": "john doe",
-        "date": "February 22 2026"
-      },
-      {
-        "id": 3,
-        "label": "video",
-        "description": "Did a quick home workout routine together.",
-        "type": "video",
-        "with": "john doe",
-        "date": "February 12 2026"
-      },
-      {
-        "id": 4,
-        "label": "text",
-        "description": "Sent a healthy recipe for post-workout meals.",
-        "type": "text",
-        "with": "john doe",
-        "date": "January 30 2026"
-      },
-      {
-        "id": 5,
-        "label": "call",
-        "description": "Celebrated hitting my new PR on deadlift.",
-        "type": "call",
-        "with": "john doe",
-        "date": "January 18 2026"
-      }
-    ]
+    "interactions": []
   },
   {
     "id": 4,
@@ -176,48 +53,7 @@
     "bio": "My sister. We talk about everything.",
     "goal": 30,
     "next_due_date": "2025-08-01",
-    "interactions": [
-      {
-        "id": 1,
-        "label": "text",
-        "description": "Asked about her new classroom setup.",
-        "type": "text",
-        "with": "john doe",
-        "date": "March 06 2026"
-      },
-      {
-        "id": 2,
-        "label": "call",
-        "description": "Caught up on family news and weekend plans.",
-        "type": "call",
-        "with": "john doe",
-        "date": "February 27 2026"
-      },
-      {
-        "id": 3,
-        "label": "video",
-        "description": "Helped her troubleshoot a tech issue.",
-        "type": "video",
-        "with": "john doe",
-        "date": "February 18 2026"
-      },
-      {
-        "id": 4,
-        "label": "text",
-        "description": "Shared a cute video of her nephew.",
-        "type": "text",
-        "with": "john doe",
-        "date": "February 05 2026"
-      },
-      {
-        "id": 5,
-        "label": "call",
-        "description": "Discussed our parents' anniversary gift.",
-        "type": "call",
-        "with": "john doe",
-        "date": "January 25 2026"
-      }
-    ]
+    "interactions": []
   },
   {
     "id": 5,
@@ -231,48 +67,7 @@
     "bio": "Roommate from freshman year. Still play games together.",
     "goal": 14,
     "next_due_date": "2025-07-18",
-    "interactions": [
-      {
-        "id": 1,
-        "label": "text",
-        "description": "Sent a new game trailer to check out.",
-        "type": "text",
-        "with": "john doe",
-        "date": "March 04 2026"
-      },
-      {
-        "id": 2,
-        "label": "call",
-        "description": "Planned an online gaming session for Friday.",
-        "type": "call",
-        "with": "john doe",
-        "date": "February 23 2026"
-      },
-      {
-        "id": 3,
-        "label": "video",
-        "description": "Streamed a co-op game together.",
-        "type": "video",
-        "with": "john doe",
-        "date": "February 13 2026"
-      },
-      {
-        "id": 4,
-        "label": "text",
-        "description": "Discussed strategies for a difficult boss level.",
-        "type": "text",
-        "with": "john doe",
-        "date": "January 29 2026"
-      },
-      {
-        "id": 5,
-        "label": "call",
-        "description": "Talked about his progress on his own indie game.",
-        "type": "call",
-        "with": "john doe",
-        "date": "January 16 2026"
-      }
-    ]
+    "interactions": []
   },
   {
     "id": 6,
@@ -286,48 +81,7 @@
     "bio": "Current coworker. Lunch buddy and problem-solving partner.",
     "goal": 14,
     "next_due_date": "2025-07-25",
-    "interactions": [
-      {
-        "id": 1,
-        "label": "text",
-        "description": "Shared notes from the morning meeting.",
-        "type": "text",
-        "with": "john doe",
-        "date": "March 03 2026"
-      },
-      {
-        "id": 2,
-        "label": "call",
-        "description": "Brainstormed ideas for the upcoming campaign.",
-        "type": "call",
-        "with": "john doe",
-        "date": "February 24 2026"
-      },
-      {
-        "id": 3,
-        "label": "video",
-        "description": "Reviewed a presentation together remotely.",
-        "type": "video",
-        "with": "john doe",
-        "date": "February 15 2026"
-      },
-      {
-        "id": 4,
-        "label": "text",
-        "description": "Sent a funny work-related meme to lighten the mood.",
-        "type": "text",
-        "with": "john doe",
-        "date": "February 03 2026"
-      },
-      {
-        "id": 5,
-        "label": "call",
-        "description": "Vented about a tough client, offered support.",
-        "type": "call",
-        "with": "john doe",
-        "date": "January 22 2026"
-      }
-    ]
+    "interactions": []
   },
   {
     "id": 7,

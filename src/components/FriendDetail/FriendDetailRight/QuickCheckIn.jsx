@@ -18,12 +18,10 @@ const QuickCheckIn = ({ friend, label }) => {
       className="text-gray-900 dark:text-white cursor-pointer"
       onClick={() => {
         addInteraction(friend.name, label);
-        toast.success(
-          `Added ${label.toUpperCase()} Interaction on Timeline successfully!`,
-        );
+        toast.success(`${label.toUpperCase()} with ${friend.name}`);
       }}
     >
-      <span className="inline-flex items-center gap-2 my-4">
+      <span className="inline-flex items-center gap-2">
         {label === "call" ? (
           <OutgoingCall />
         ) : label === "text" ? (
