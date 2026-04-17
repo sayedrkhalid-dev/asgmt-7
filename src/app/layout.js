@@ -37,6 +37,9 @@ export default function RootLayout({ children }) {
           position="top-right"
           toastOptions={{
             style: {
+              top: "0",
+              left: "50%",
+              transform: "translateX(-50%)",
               background: "#1f2937",
               color: "#fff",
               border: "1px solid #374151",

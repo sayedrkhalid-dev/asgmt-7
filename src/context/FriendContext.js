@@ -1,18 +1,17 @@
 "use client";
 
 import { createContext, useState, useContext } from "react";
-import interactions_data from "../../public/data/interactions.json";
-
 const FriendContext = createContext();
 
 export const FriendProvider = ({ children }) => {
-  const [timeline, setTimeline] = useState([...interactions_data]);
+  const [timeline, setTimeline] = useState([]);
 
   const addInteraction = (personName, type) => {
     const newInteraction = {
       id: Date.now(),
       type, // "text" | "call" | "video"
-      personName,
+      personName, // Person Name
+      description: `You have just ${type} with ${personName}`,
       date: new Date().toLocaleDateString("en-US", {
         year: "numeric",
         month: "long",
@@ -32,7 +31,8 @@ export const FriendProvider = ({ children }) => {
 
 // Custom hook for convenience
 export const useFriend = () => {
-  const ctx = useContext(FriendContext);
-  if (!ctx) throw new Error("useFriend must be used inside <FriendProvider>");
-  return ctx;
+  const context = useContext(FriendContext);
+  if (!context)
+    throw new Error("useFriend must be used inside <FriendProvider>");
+  return context;
 };

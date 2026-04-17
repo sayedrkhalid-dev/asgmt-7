@@ -1,5 +1,6 @@
 import { Card } from "flowbite-react";
-import InteractionPie from "./PieChart";
+import FriendsPieChart from "./FriendsPieChart";
+
 const StatsPage = () => {
   return (
     <section>
@@ -11,7 +12,7 @@ const StatsPage = () => {
         <Card className="text-gray-900 dark:text-gray-50">
           <h5 className="font-semibold">By Interaction Type</h5>
 
-          <InteractionPie />
+          <FriendsPieChart />
         </Card>
       </div>
     </section>
