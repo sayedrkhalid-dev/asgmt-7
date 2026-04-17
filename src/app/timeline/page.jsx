@@ -2,9 +2,17 @@
 import { Card, Dropdown, DropdownItem } from "flowbite-react";
 import Interaction from "./Interaction/Interaction";
 import { useFriend } from "@/context/FriendContext";
+import { useState } from "react";
 
 const TimelinePage = () => {
   const { timeline } = useFriend();
+  const [searchType, setSearchType] = useState("all");
+  const searchedTimeline = (type) => {
+    if (searchType.toLowerCase() === "all") return timeline;
+    return timeline.filter(
+      (interaction) => interaction.type === type.toLowerCase(),
+    );
+  };
 
   return (
     <section>
@@ -15,20 +23,28 @@ const TimelinePage = () => {
               Timeline
             </h1>
             <Dropdown
-              label="Filter Timeline"
-              dismissOnClick={false}
+              color="alternative"
+              label={`Search By:  ${searchType.toUpperCase()}`}
               className="py-2"
             >
-              <DropdownItem>Text</DropdownItem>
-              <DropdownItem>Meet up</DropdownItem>
-              <DropdownItem>Video</DropdownItem>
-              <DropdownItem>Call</DropdownItem>
+              <DropdownItem onClick={() => setSearchType("all")}>
+                All
+              </DropdownItem>
+              <DropdownItem onClick={() => setSearchType("text")}>
+                Text
+              </DropdownItem>
+              <DropdownItem onClick={() => setSearchType("video")}>
+                Video
+              </DropdownItem>
+              <DropdownItem onClick={() => setSearchType("call")}>
+                Call
+              </DropdownItem>
             </Dropdown>
           </div>
         </Card>
 
-        <Card className="text-gray-500 dark:text-gray-300 justify-items-start">
-          {timeline.map((interaction) => (
+        <Card className="mt-2 text-gray-500 dark:text-gray-300 justify-items-start">
+          {searchedTimeline(searchType).map((interaction) => (
             <Interaction key={interaction.id} interaction={interaction} />
           ))}
         </Card>
