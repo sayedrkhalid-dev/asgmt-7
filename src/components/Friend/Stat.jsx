@@ -1,6 +1,6 @@
 import { Card } from "flowbite-react";
 
-const FriendsStatCom = ({ stat, label }) => {
+const Stat = ({ stat, label }) => {
   return (
     <Card className="dark:bg-gray-800/50 text-gray-900 dark:text-gray-50">
       <div className="flex flex-col gap-1 items-center justify-center">
@@ -13,4 +13,4 @@ const FriendsStatCom = ({ stat, label }) => {
   );
 };
 
-export default FriendsStatCom;
+export default Stat;
