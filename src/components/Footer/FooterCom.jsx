@@ -44,7 +44,7 @@ const FooterCom = () => {
 
         <FooterDivider />
 
-        <div container className="mt-8 flex justify-between">
+        <div className="mt-8 flex justify-between">
           <div className="flex items-center gap-2">
             <FooterCopyright href="/" by=" KinKeeper" year={2026} />
             <span className="text-xs text-gray-700 dark:text-gray-300">
