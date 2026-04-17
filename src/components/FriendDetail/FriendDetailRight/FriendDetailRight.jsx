@@ -56,7 +56,7 @@ const FriendDetailRight = ({ friend }) => {
             </p>
           </div>
 
-          <Link href={`${friend.id}/edit`}>
+          <Link href="#">
             <Button
               outline
               color="gray"
