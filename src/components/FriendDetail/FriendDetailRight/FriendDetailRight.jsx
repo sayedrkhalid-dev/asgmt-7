@@ -56,7 +56,7 @@ const FriendDetailRight = ({ friend }) => {
             </p>
           </div>
 
-          <Link href="#">
+          <Link href="/edit">
             <Button
               outline
               color="gray"
@@ -93,12 +93,14 @@ const FriendDetailRight = ({ friend }) => {
             Recent Interactions
           </h2>
 
-          <Badge color="gray" size="sm" className="rounded cursor-pointer">
-            <span className="flex items-center gap-1">
-              <ClockArrow size={18} />
-              Full History
-            </span>
-          </Badge>
+          <Link href="/full_history">
+            <Badge color="gray" size="sm" className="rounded cursor-pointer">
+              <span className="flex items-center gap-1">
+                <ClockArrow size={18} />
+                Full History
+              </span>
+            </Badge>
+          </Link>
         </div>
 
         {friend.interactions.map((interaction) => (
